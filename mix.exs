@@ -8,7 +8,8 @@ defmodule Ecobiex.MixProject do
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      package: package(),
+      description: description()
     ]
   end
 
@@ -30,10 +31,14 @@ defmodule Ecobiex.MixProject do
     ]
   end
 
+  defp description() do
+    "Elixir client for the Ecobici API"
+  end
 
   defp package() do
     [
-      licenses: ["MIT"]
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/llopez/ecobiex"}
     ]
   end
 end
