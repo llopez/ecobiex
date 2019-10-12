@@ -1,9 +1,9 @@
-defmodule Ecobici.MixProject do
+defmodule Ecobiex.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ecobici,
+      app: :ecobiex,
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule Ecobici.MixProject do
   def application do
     [
       extra_applications: [:logger, :inets, :ssl],
-      mod: {Ecobici.Application, []}
+      mod: {Ecobiex.Application, []}
     ]
   end
 

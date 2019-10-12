@@ -1,4 +1,4 @@
-defmodule Ecobici.Request do
+defmodule Ecobiex.Request do
   def build_request(endpoint, client) do
     endpoint
     |> URI.parse()

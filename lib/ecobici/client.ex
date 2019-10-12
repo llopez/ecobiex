@@ -1,4 +1,4 @@
-defmodule Ecobici.Client do
+defmodule Ecobiex.Client do
   defstruct client_id: "", client_secret: ""
 
   def new(client_id, client_secret) do

@@ -1,7 +1,7 @@
-defmodule Ecobici.Endpoint.Status do
+defmodule Ecobiex.Endpoint.Status do
   @endpoint "https://apitransporte.buenosaires.gob.ar/ecobici/gbfs/stationStatus"
 
-  alias Ecobici.Request
+  alias Ecobiex.Request
 
   def all(client) do
     @endpoint

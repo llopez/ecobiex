@@ -1,5 +1,5 @@
-defmodule Ecobici do
+defmodule Ecobiex do
   @moduledoc """
-  Documentation for Ecobici.
+  Documentation for Ecobiex.
   """
 end

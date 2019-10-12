@@ -1,4 +1,4 @@
-defmodule Ecobici.Endpoint.StatusTest do
+defmodule Ecobiex.Endpoint.StatusTest do
   use ExUnit.Case
 
   import Mock
@@ -30,7 +30,7 @@ defmodule Ecobici.Endpoint.StatusTest do
       }
     """
 
-    client = Ecobici.Client.new("id", "secret")
+    client = Ecobiex.Client.new("id", "secret")
     %{client: client, body: body}
   end
 
@@ -39,7 +39,7 @@ defmodule Ecobici.Endpoint.StatusTest do
       request: fn :get, {_, []}, [], [] ->
         {:ok, {{'HTTP/1.1', 200, 'OK'}, [], body}}
       end do
-      assert Ecobici.Endpoint.Status.all(client) == %{
+      assert Ecobiex.Endpoint.Status.all(client) == %{
                "data" => %{
                  "stations" => [
                    %{

@@ -1,4 +1,4 @@
-defmodule Ecobici.Endpoint.InfoTest do
+defmodule Ecobiex.Endpoint.InfoTest do
   use ExUnit.Case
 
   import Mock
@@ -27,7 +27,7 @@ defmodule Ecobici.Endpoint.InfoTest do
       }
     """
 
-    client = Ecobici.Client.new("id", "secret")
+    client = Ecobiex.Client.new("id", "secret")
     %{client: client, body: body}
   end
 
@@ -36,7 +36,7 @@ defmodule Ecobici.Endpoint.InfoTest do
       request: fn :get, {_, []}, [], [] ->
         {:ok, {{'HTTP/1.1', 200, 'OK'}, [], body}}
       end do
-      assert Ecobici.Endpoint.Info.all(client) == %{
+      assert Ecobiex.Endpoint.Info.all(client) == %{
                "data" => %{
                  "stations" => [
                    %{
