@@ -3,6 +3,7 @@ defmodule Ecobiex.Endpoint.Status do
 
   alias Ecobiex.Request
 
+  @spec all(Ecobiex.Client.t()) :: {Map.t()}
   def all(client) do
     @endpoint
     |> Request.build_request(client)
