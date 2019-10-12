@@ -2,7 +2,7 @@
 
 # Ecobiex
 
-**TODO: Add description**
+Ecobiex is the elixir client for the Ecobici API
 
 ## Installation
 
